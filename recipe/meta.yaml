@@ -1,5 +1,5 @@
 {% set name = "django-breeze" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_breeze-{{ version }}.tar.gz
-  sha256: 4bfadc5d5b9a85d9fa8669066ad2da89414055a9ff1866d5d1ac652467adb38d
+  sha256: e0ba4245e7e16521b3e726f2823d6fef6eeb88ccb03eb22949112b7a420ce535
 
 build:
   entry_points:
