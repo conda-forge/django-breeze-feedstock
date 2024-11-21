@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_breeze-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_breeze-{{ version }}.tar.gz
   sha256: e0ba4245e7e16521b3e726f2823d6fef6eeb88ccb03eb22949112b7a420ce535
 
 build:
@@ -23,8 +23,8 @@ requirements:
     - pip
   run:
     - python >=3.10.0,<4.0.0
-    - django-vite >=2.0.2,<3.0.0
-    - inertia-django >=0.5.2,<0.6.0
+    - django-vite >=3.0.5
+    - inertia-django >=0.6.0
 
 test:
   imports:
