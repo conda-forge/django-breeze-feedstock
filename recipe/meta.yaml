@@ -24,8 +24,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<4.0.0
-    - django-vite >=3.0.5
-    - inertia-django >=0.6.0
+    - django-vite ==3.0.5
+    - inertia-django ==0.6.0
 
 test:
   imports:
