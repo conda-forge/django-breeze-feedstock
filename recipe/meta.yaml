@@ -1,3 +1,4 @@
+{% set python_min = '3.10.0' %}
 {% set name = "django-breeze" %}
 {% set version = "1.1.0" %}
 
@@ -14,15 +15,15 @@ build:
     - django-breeze = django_breeze.scripts.django_breeze:run
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10,<4.0
+    - python {{ python_min }}
     - poetry-core
     - pip
   run:
-    - python >=3.10.0,<4.0.0
+    - python >={{ python_min }},<4.0.0
     - django-vite >=3.0.5
     - inertia-django >=0.6.0
 
@@ -34,6 +35,7 @@ test:
     - django-breeze --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Louxsdon/django-breeze
