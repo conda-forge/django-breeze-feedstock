@@ -2,7 +2,6 @@
 schema_version: 1
 
 context:
-  python_min: 3.10.0
   name: django-breeze
   version: "1.1.0"
 
@@ -24,7 +23,7 @@ build:
 
 requirements:
   host:
-    - python 3.10.0.*
+    - python ${{ python_min }}.*
     - poetry-core
     - pip
   run:
